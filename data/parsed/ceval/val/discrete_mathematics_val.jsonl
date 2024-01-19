@@ -1,0 +1,16 @@
+{"question": "下列集合中与$\\mathbf{\\{}1,2\\}$不相等的是:____", "answer": "B", "options": {"A": "$\\{1,2\\}\\cup\\phi$", "B": "$\\{1,2\\}$", "C": "$\\{1,2,2\\}$", "D": "$\\{x|\\ x\\in{\\mathcal{R}}\\land x^{2}-3x+2=0\\}$"}, "label": "ceval"}
+{"question": "令P：天气很冷，Q：老王来了，则命题“虽然天气很冷，但是老王还是来了”可符号化为____", "answer": "A", "options": {"A": "P∧Q", "B": "P→Q", "C": "P∧﹁Q", "D": "P→﹁Q"}, "label": "ceval"}
+{"question": "对于集合A上的二元关系R，若$B\\subseteq A$，$C\\subseteq A$，$R\\uparrow\\ B$代表关系R在集合B上受限，则下列是正确的____", "answer": "D", "options": {"A": "$R[B\\cap C]=R[B]\\cap R[C]$", "B": "$R[B]-R[C]=R[B-C]$", "C": "$B\\subseteq A\\Leftrightarrow R[B]\\subseteq R[A]$", "D": "$R\\uparrow(B\\cup C)=R\\uparrow B\\cup R\\uparrow C$"}, "label": "ceval"}
+{"question": "下列说法错误的是____", "answer": "C", "options": {"A": "若简单图每个节点的度大于等于$\\frac{n}{2}$,则$G$有$H$回路", "B": "简单图$G$存在$H$回路的充要条件是其闭合图存在$H$回路", "C": "简单图$G$的任意结点$v_i$，$v_j$之间恒有$d(v_{j})+d(v_{j})\\geq n{-}1$， 则$G$存在$H$回路", "D": "简单图的闭合图唯一"}, "label": "ceval"}
+{"question": "给定n个结点的一个图，它是一个树的下列说法中，____是不对的。", "answer": "D", "options": {"A": "无回路的连通图", "B": "无回路但若增加一条新边就有回路", "C": "连通且m=n-1， 其中m是边数，n是结点数", "D": "所有结点的度数>2"}, "label": "ceval"}
+{"question": "六阶群的任何非平凡子群一定不是____", "answer": "D", "options": {"A": "2阶", "B": "5阶", "C": "3阶", "D": "6阶"}, "label": "ceval"}
+{"question": "下面说法____是错误的", "answer": "A", "options": {"A": "不存在既自反又反自反的关系", "B": "存在即对称又反对称的关系", "C": "存在即不对称又不反对称的关系", "D": "由一个有序对构成的二元关系一定是一个传递关系。"}, "label": "ceval"}
+{"question": "设图G是有6个顶点的连通图，总度数为20，则从G中删去____边后使之变成树。", "answer": "B", "options": {"A": "10", "B": "5", "C": "3", "D": "2"}, "label": "ceval"}
+{"question": "设G为平面图，则下面可能不正确的选项是_____", "answer": "A", "options": {"A": "G = (G*)*", "B": "G*= ((G*)*)*", "C": "(G*)* = (G*)*)*)*", "D": "((G*)*)*= ((((G*)*)*)*)*"}, "label": "ceval"}
+{"question": "已知一棵树T中有度为5，4，3，2的顶点各一个，其余为树叶顶点，T的树叶顶点数为哪项？____", "answer": "A", "options": {"A": "8", "B": "7", "C": "6", "D": "5"}, "label": "ceval"}
+{"question": "含5个顶点、3条边的不同构的简单图有几个?____", "answer": "C", "options": {"A": "2", "B": "3", "C": "4", "D": "5"}, "label": "ceval"}
+{"question": "下面说法错误的是____", "answer": "A", "options": {"A": "邻接矩阵能表示自环，也能表示重边", "B": "有向图邻接矩阵的第$i$行非零元的数目恰好是$\\nu_{i}$的正度。第$j$列非零元的数目是$\\nu_{j}$的负度", "C": "关联矩阵能表示重边，不能表示自环", "D": "有向图关联矩阵第$i$行中1 的数目是$\\nu_{i}$的正度，-1 的数目是$\\nu_{i}$的负度。"}, "label": "ceval"}
+{"question": "下式不一定成立的是____", "answer": "D", "options": {"A": "$(\\forall x)(P(x)\\wedge Q(x))=(\\forall x)P(x)\\wedge(\\forall x)Q(x)$", "B": "$(\\exists x)(P(x)\\lor Q(x))=(\\exists x)P(x)\\lor(\\exists x)Q(x)$", "C": "$(\\forall x)(\\forall y)(P(x)\\lor{Q(x)}(y))=(\\forall x)P(x)\\lor(\\forall x)Q(x)$", "D": "$(\\exists x)(P(x)\\wedge Q(x))=(\\exists x)P(x)\\wedge(\\exists x)Q(x)$"}, "label": "ceval"}
+{"question": "设A={2，3，4，6，9，12，18}，A中的整除关系R是偏序关系，那么在偏序集<A，R>中，下列说法正确的是____", "answer": "D", "options": {"A": "A的最大元素是18；", "B": "A 的最小元素是2；", "C": "B= {3，9}的上界只有 18；", "D": "B= {4，9} 没有上下界。"}, "label": "ceval"}
+{"question": "设G为平面图，则下面可能不连通的图是____", "answer": "A", "options": {"A": "G的闭合图", "B": "G*", "C": "(G*)*", "D": "(((G)*)*)*"}, "label": "ceval"}
+{"question": "一个无向图有五个结点，其中4个的度数是1,2,3,4,则第5个结点的度数不可能是____", "answer": "D", "options": {"A": "0", "B": "2", "C": "4", "D": "5"}, "label": "ceval"}
