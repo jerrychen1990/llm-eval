@@ -16,9 +16,9 @@ logger = get_logger(__name__)
 
 if __name__ == "__main__":
     task = SingleSelectionTask(
-        name="ceval-glm6b-0123",
+        name="ceval-glm66b-0123",
         data_path="./data/parsed/ceval/dev/*.jsonl",
-        llm_config=dict(model_type="ZHIPU", model="chatglm_6b"),
+        llm_config=dict(model_type="ZHIPU", model="chatglm_66b"),
         prompt_template='''请从ABCD四个【选项】中选出【问题】的答案,直接给出选项
 【问题】：{question}
 
