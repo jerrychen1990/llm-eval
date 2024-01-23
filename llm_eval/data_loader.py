@@ -7,26 +7,25 @@
 '''
 
 import glob
-import logging
 from pydantic import BaseModel, Field
 from typing import List, Optional
 
 from tqdm import tqdm
-from snippets.logs import getlog_detail
+from llm_eval.util import get_logger
 from snippets import load2list
 
-logger = getlog_detail(name=__name__, level=logging.INFO)
+logger = get_logger(name=__name__)
 
-class TextItem(BaseModel):
+class TestItem(BaseModel):
+    doc_path:str = Field(description="文件路径",default=None)
+    label:Optional[str] 
     def to_prompt_dict(self):
         raise NotImplementedError
 
-class SelectionItem(TextItem):
+class SelectionItem(TestItem):
     question:str
     answer:Optional[str]
     options:dict = Field(description="选项")
-    doc_path:Optional[str] = Field(description="文件路径",default=None)
-    label:Optional[str] 
     
     
     def to_prompt_dict(self):
@@ -34,13 +33,16 @@ class SelectionItem(TextItem):
         options_str = "\n".join(options)
         return dict(question=self.question,options=options_str)
         
-def load_data(glob_data_path:str, tgt_cls:type[TextItem])->List[TextItem]:
+def load_data(glob_data_path:str, tgt_cls:type[TestItem])->List[TestItem]:
     data_paths = glob.glob(glob_data_path)
     rs_items = []
+    
     for path in data_paths:
         logger.info(f"loading data from {path}")
+        # base_name = os.path.basename(path)
         items = [tgt_cls(**e,doc_path=path) for e in tqdm(load2list(path))]
         rs_items.extend(items)
+        # rs_items[base_name](items)
     logger.info(f"load data done, loaded {len(rs_items)} items")
     return rs_items
 
